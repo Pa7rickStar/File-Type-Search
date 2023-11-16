@@ -1,0 +1,38 @@
+# Just Apple things..
+.DS_Store
+
+# Python
+__pycache__/**
+.ipynb_checkpoints/**
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
+.vscode/**
+.mypy_cache
+
+# PyCharm
+.idea/**
+**/bin/**
+**/lib/**
+**/share/**
+**/pyvenv.cfg
+
+# log files
+*.log
+logs/**
+
+# keep folders with a ".gitkeep" file (necessary for empty folders since those will not be  tracked by git otherwise)
+!*/.gitkeep
+
+# json
+*.json

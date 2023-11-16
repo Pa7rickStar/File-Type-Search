@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.starfish.filetypesearch</string>
+	<key>connections</key>
+	<dict>
+		<key>1596F8A7-4C8D-49CD-AEF6-7878058730FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D687541-1BF3-4EB8-A531-9B0952C66A8E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4D687541-1BF3-4EB8-A531-9B0952C66A8E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AD8EFE2-7958-42CA-BA8D-52F9C5305F8C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D2AF92C-305C-44F2-9D01-EEE3E9C69007</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal file in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FA5B7EB1-93D1-4E7A-9771-0338EA0CB37E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1596F8A7-4C8D-49CD-AEF6-7878058730FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Pa7rickStar</string>
+	<key>description</key>
+	<string>Choose a file type, then search for files with this type</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>File Type Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>5AD8EFE2-7958-42CA-BA8D-52F9C5305F8C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>with file type {var:types}</string>
+				<key>title</key>
+				<string>Search for files</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>4D687541-1BF3-4EB8-A531-9B0952C66A8E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Checking Uniform Type Identifiers (uti) database...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>src/get_uti_database.py</string>
+				<key>subtext</key>
+				<string>Which file type should be searched?</string>
+				<key>title</key>
+				<string>Find files with a specific file type</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FA5B7EB1-93D1-4E7A-9771-0338EA0CB37E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "config" : {
+      "types" : [
+        "{query}"
+      ]
+    },
+    "variables" : {
+      "types": "{query}"
+    }
+  }
+}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.json</string>
+			<key>uid</key>
+			<string>1596F8A7-4C8D-49CD-AEF6-7878058730FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>8D2AF92C-305C-44F2-9D01-EEE3E9C69007</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>## Usage
+
+Search for a file type via the `ft` keyword. 
+![File Type Search - Type](images/about/file-type-search-type.png)
+
+
+
+Press &lt;kbd&gt;↩&lt;/kbd&gt; to select the file type.
+![File Type Search - eg. JPEG](images/about/file-type-search-jpeg.png)
+
+
+
+Then search for a file with the set file type.
+![File Type Search - File](images/about/file-type-search-file.png)
+
+
+&lt;kbd&gt;↩&lt;/kbd&gt;: Open the file.
+&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Reveal in Finder.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1596F8A7-4C8D-49CD-AEF6-7878058730FA</key>
+		<dict>
+			<key>note</key>
+			<string>2. The JSON utility sets the types dynamically as a config setting for the next File Filter.</string>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>4D687541-1BF3-4EB8-A531-9B0952C66A8E</key>
+		<dict>
+			<key>note</key>
+			<string>3. Type the name of the file you want to search for.</string>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>5AD8EFE2-7958-42CA-BA8D-52F9C5305F8C</key>
+		<dict>
+			<key>note</key>
+			<string>4. Pressing the Return key opens the file you selected.</string>
+			<key>xpos</key>
+			<real>690</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>8D2AF92C-305C-44F2-9D01-EEE3E9C69007</key>
+		<dict>
+			<key>note</key>
+			<string>5. Hold the Alt key when pressing Return to reveal the file in Finder instead.</string>
+			<key>xpos</key>
+			<real>690</real>
+			<key>ypos</key>
+			<real>280</real>
+		</dict>
+		<key>FA5B7EB1-93D1-4E7A-9771-0338EA0CB37E</key>
+		<dict>
+			<key>note</key>
+			<string>1. Get uti database form system and select file types.</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>ft</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Use this keyword to launch the workflow</string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>90</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>(days)</string>
+			<key>label</key>
+			<string>Interval for reloading system uti database</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>reload_interval</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
