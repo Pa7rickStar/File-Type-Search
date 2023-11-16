@@ -1,5 +1,5 @@
 # File Type Search
-[Alfred 5](https://www.alfredapp.com) workflow, which allows to search only files of the selected file type.
+[Alfred 5](https://www.alfredapp.com) workflow, which allows a filtered search for files of the selected file type.
 
 ## Usage
 Search for a file type via the `ft` keyword. 
