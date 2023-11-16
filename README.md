@@ -28,10 +28,11 @@ MacOS maintains a system wide database with [Uniform Type Identifier (UTI)](http
 
 ## Acknowledgements
 This Workflow is heavily inspired by the [Simple Folder Search](https://alfred.app/workflows/alfredapp/simple-folder-search/) and [Dynamic File Search](https://alfred.app/workflows/alfredapp/dynamic-file-search/) respectively.
+The workflow icon is also based on these workflows.
 
 There is an example for creating a workflow which only searches *.pdf files in the [Alfred docs](https://www.alfredapp.com/help/workflows/inputs/file-filter/#workflow). However, the file type would be static then.
 
-This workflow combines the both concepts so the file type can be set dynamically when using the workflow. 
+This workflow combines the both concepts so the file type can be set dynamically when using the workflow.
 
 There is a similar [workflow](https://www.alfredforum.com/topic/20933-search-files-by-extension/) by [Stephen_C](https://github.com/Stephen-Lon), which lists all files with a given extension in a given folder. The files are not searchable though.
 
